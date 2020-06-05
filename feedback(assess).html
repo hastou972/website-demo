@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Java Education Web</title>
+    <meta name="keywords" content="Feedback" />
+    <meta name="description" content="Feedback" />
+    <meta name="author" content="js" />
+    <meta name="copyright" content="js" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/lib.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.9.1.min.js">
+    </script>
+    <script src="js/global.js">
+    </script>
+    <script src="js/cn.js">
+    </script>
+    <script src="js/checkform.js">
+    </script>
+    <script src="js/wow.js">
+    </script>
+    <script src="js/imagesloaded.min.js">
+    </script>
+    <script src="js/countup.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script>
+        jQuery(window).scrollTop(0);
+        jQuery('html,body').scrollTop(0);
+        new WOW().init({
+            mobile: false
+        });
+
+        $(function() {
+            setTimeout(function() {
+                    $('#body').show();
+                },
+                500);
+        })
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font: 14px "Microsoft YaHei", sans-serif;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        
+        .nav {
+            /*margin-top: 60px;*/
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            background: #fff;
+        }
+        
+        .nav li {
+            float: left;
+            position: relative;
+        }
+        
+        .nav li a {
+            display: block;
+            width: 150px;
+            text-align: center;
+            color: rgb(27, 21, 21);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .nav li ul li a {
+            color: #333;
+        }
+        
+        .nav li ul li {
+            float: none;
+        }
+        
+        .nav li ul {
+            /*border: 1px solid #ccc;
+    border-top: none;*/
+            background: #fff;
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+        
+        .nav li:hover {
+            background: rgb(32, 125, 231);
+        }
+        
+        .nav li:hover ul {
+            display: block;
+        }
+        
+        .banner img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="trans border-box  " style="background-color:#FFFFFF">
+        <div class="wrap clean relative">
+            <div id="logo" class="fl relative trans">
+                <a href="index.html" ​ class="relative trans">
+                    <img src="picture/logo.png" alt="" class="max-w100 max-h100 trans">
+                </a>
+            </div>
+            <nav class="absolute fz0 trans border-box stopP ">
+                <div class="nav">
+                    <div class="container">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="#">Learning</a>
+                                <ul>
+                                    <li><a href="learningPlan.html">Plans</a></li>
+                                    <li><a href="learningMaterials.html">Materials</a></li>
+                                    <li><a href="learningRecord.html">Records</a></li>
+                                    <li><a href="Feedback.html">Feedbacks</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Practice</a>
+                                <ul>
+                                    <li><a href="test1.html">Test</a></li>
+                                    <li><a href="lab1.html">Lab</a></li>
+                                    <li><a href="answer.html">Answer</a></li>
+                                    <li><a href="question.html">Question</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">Assessment</a>
+                                <ul>
+                                    <li><a href="criterion.html">Criterion</a></li>
+                                    <li><a href="process&result.html">Process</a></li>
+                                    <li><a href="process&result.html">Result</a></li>
+                                    <li><a href="feedback(assess).html">Feedback</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!--<div class="member show992 clean"> <a href="#"​ class="login member-btn fl content-box text-center trans"><i></i>登录</a> <a href="#"​ class="try member-btn fl content-box text-center trans">注册账号</a> </div>-->
+        </div>
+        </nav>
+        <!--<div class="header-user fr"> <a href="#"​ class="login inline-block text-center border-box trans hide992" rel="nofollow"><i></i>登录</a> <a href="#"​ class="try inline-block text-center border-box trans hide992" rel="nofollow">注册账号</a> </div>-->
+        <div class="menu-button fr stopP show992 trans">
+            <a href="#" ​ class="fa fa-align-justify trans" rel="nofollow" onclick="ActionMenu();">
+            </a>
+        </div>
+        </div>
+    </header>
+
+
+    <div id="header-blank" class="show992">
+    </div>
+    <div id="body" class="trans">
+        <div id="banner" class="relative hide992">
+            <div class="bd over">
+                <div class="bar relative fz0 nowrap">
+                    <div class="item relative inline-block text-center fz0 over item-0">
+                        <img src="picture/ebae4c5f9e.jpg" alt="" class="max-w100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="small-banner" class="relative show992">
+            <div class="bd over">
+                <div class="bar relative fz0 nowrap">
+                </div>
+            </div>
+        </div>
+        <div id="price" class="wrap">
+            <div class="price-pack">
+                <table id="price-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr class="fun-title wow fadeInUp" align="center">
+                        <td colspan="21">
+                            Learning Progress
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-type" rowspan="10">
+                            Lesson
+                        </td>
+                        <td class="fun-title wow fadeInUp">
+                            Lesson1
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lesson2
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lesson3
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lesson4
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lesson5
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lesson6
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lesson7
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lesson8
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lesson9
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lesson10
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-title wow fadeInUp" align="center">
+                        <td colspan="21">
+                            Practice Progress
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-type" rowspan="7">
+                            Question
+                        </td>
+                        <td class="fun-title wow fadeInUp">
+                            Question1
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Question2
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Question3
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Question4
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Question5
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Question6
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Question7
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-type" rowspan="5">
+                            Lab
+                        </td>
+                        <td class="fun-title wow fadeInUp">
+                            Lab1
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lab2
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lab3
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lab4
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Lab5
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            <img class="middle" src="picture/ico-true.png" alt="">
+                        </td>
+                    </tr>
+                    <tr class="fun-title wow fadeInUp" align="center">
+                        <td colspan="21">
+                            Test Mark
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-type" rowspan="6">
+                            Test Number
+                        </td>
+                        <td class="fun-title wow fadeInUp">
+                            Test1
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            90
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Test2
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            90
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Test3
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            90
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Test4
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            90
+                        </td>
+                    </tr>
+                    <tr class="fun-row i0" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Test5
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            90
+                        </td>
+                    </tr>
+                    <tr class="fun-row i1" align="center">
+                        <td class="fun-title wow fadeInUp">
+                            Final Test
+                        </td>
+                        <td class="fun-cell i0 wow fadeInUp">
+                            90
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div id="follow">
+
+            <div id="openOnline" class="item relative hide992" row="2">
+                <a href="#" ​ class="ico blue block absolute" title="Online consultation" onClick="OptOnline(1);OptQrcode(0);OptHot(0);" rel="nofollow">
+                    <span class="middle fa fa-qq fa-2x">
+                        </span>
+                </a>
+
+            </div>
+            <div class="item relative show992 trans">
+                <a href="#" ​ class="ico blue block trans phone" rel="nofollow">
+                </a>
+            </div>
+            <div class="item relative trans">
+                <a href="#" ​ class="ico red block trans sina" title="WeiBo" target="_blank" rel="nofollow">
+                    <span class="middle fa fa-weibo fa-2x">
+                        </span>
+                </a>
+            </div>
+            <div id="openQrcode" class="item relative trans">
+                <a href="#" ​ class="ico green block trans wechat" title="WeChat" onclick="OptQrcode();OptOnline(0)" rel="nofollow">
+                    <span class="middle fa fa-weixin fa-2x">
+                        </span>
+                </a>
+                <div id="wechat-qrcode">
+                    <img src="picture/erweima.png" alt="" width="200" />
+                </div>
+            </div>
+            <div class="item relative">
+                <a href="#" ​ class="ico block trans totop show totop" title="back to the top" onclick="toTop();" rel="nofollow">
+                    <span class="middle fa fa-angle-up fa-2x">
+                        </span>
+                </a>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+        JAVA Educational Website
+    </title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/lib.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.9.1.min.js">
+    </script>
+    <script src="js/global.js">
+    </script>
+    <script src="js/cn.js">
+    </script>
+    <script src="js/checkform.js">
+    </script>
+    <script src="js/wow.js">
+    </script>
+    <script src="js/imagesloaded.min.js">
+    </script>
+    <script src="js/countup.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script>
+        jQuery(window).scrollTop(0);
+        jQuery('html,body').scrollTop(0);
+        new WOW().init({
+            mobile: false
+        });
+
+        $(function() {
+            setTimeout(function() {
+                    $('#body').show();
+                },
+                500);
+        })
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font: 14px "Microsoft YaHei", sans-serif;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        
+        .nav {
+            /*margin-top: 60px;*/
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            background: #fff;
+        }
+        
+        .nav li {
+            float: left;
+            position: relative;
+        }
+        
+        .nav li a {
+            display: block;
+            width: 150px;
+            text-align: center;
+            color: rgb(27, 21, 21);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .nav li ul li a {
+            color: #333;
+        }
+        
+        .nav li ul li {
+            float: none;
+        }
+        
+        .nav li ul {
+            /*border: 1px solid #ccc;
+        border-top: none;*/
+            background: #fff;
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+        
+        .nav li:hover {
+            background: rgb(32, 125, 231);
+        }
+        
+        .nav li:hover ul {
+            display: block;
+        }
+        
+        .banner img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="trans border-box  " style="background-color:#FFFFFF">
+        <div class="wrap clean relative">
+            <div id="logo" class="fl relative trans">
+                <a href="index.html" ​ class="relative trans">
+                    <img src="picture/logo.png" alt="" class="max-w100 max-h100 trans">
+                </a>
+            </div>
+            <nav class="absolute fz0 trans border-box stopP ">
+                <div class="nav">
+                    <div class="container">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="#">Learning</a>
+                                <ul>
+                                    <li><a href="learningPlan.html">Plans</a></li>
+                                    <li><a href="learningMaterials.html">Materials</a></li>
+                                    <li><a href="learningRecord.html">Records</a></li>
+                                    <li><a href="Feedback.html">Feedbacks</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Practice</a>
+                                <ul>
+                                    <li><a href="test1.html">Test</a></li>
+                                    <li><a href="lab1.html">Lab</a></li>
+                                    <li><a href="answer.html">Answer</a></li>
+                                    <li><a href="question.html">Question</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">Assessment</a>
+                                <ul>
+                                    <li><a href="criterion.html">Criterion</a></li>
+                                    <li><a href="process&result.html">Process</a></li>
+                                    <li><a href="process&result.html">Result</a></li>
+                                    <li><a href="feedback(assess).html">Feedback</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--<div class="header-user fr"> <a href="#"​ class="login inline-block text-center border-box trans hide992" rel="nofollow"><i></i>登录</a> <a href="#"​ class="try inline-block text-center border-box trans hide992" rel="nofollow">注册账号</a> </div>-->
+            <div class="menu-button fr stopP show992 trans">
+                <a href="#" ​ class="fa fa-align-justify trans" rel="nofollow" onClick="ActionMenu();">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="header-blank" class="show992">
+    </div>
+    <div id="body" class="trans">
+        <div id="banner" class="relative hide992">
+            <div class="bd over">
+                <div class="bar relative fz0 nowrap">
+                    <div class="item relative inline-block text-center fz0 over item-0">
+                        <img src="picture/44c5a1b00c.jpg" alt="" class="max-w100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="small-banner" class="relative show992">
+            <div class="bd over">
+                <div class="bar relative fz0 nowrap">
+                </div>
+            </div>
+        </div>
+        <div class="bgf3">
+            <div id="instance" class="wrap clean">
+                <div class="instance-list clean">
+                    <div class='item border-box over wow fadeInUp fl'>
+                        <div class="relative clean">
+                            <div class="cover fl relative">
+                                <img src="picture/notebook.png" alt="" class="trans max-w100" ondragstart="return false;">
+                                <div class="img absolute text-center fz0">
+                                    <img src="picture/1-1g0091606040-l.jpg" alt="" class="trans" ondragstart="return false;">
+                                </div>
+                            </div>
+                            <div class="info fl">
+                                <div class="clean">
+                                    <div class="logo fl text-center over fz0">
+                                        <img src="picture/1-1g0091606040-l.jpg" alt="" class="middle max-w100 inline-block">
+                                        <span class="middle-span">
+                                            </span>
+                                    </div>
+                                    <div class="title fl">
+                                        <div class="name">
+                                            Test 1 answer
+                                        </div>
+                                        <div class="date">
+                                            Update Time:2020.05.20
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brief over">
+                                    Please make sure you have already finish the test and do not copy the answer
+                                </div>
+                                <a href="testanswer1.html" ​ ​ class="view block text-center" rel="nofollow">
+                                        Check
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item border-box over wow fadeInUp fr'>
+                        <div class="relative clean">
+                            <div class="cover fl relative">
+                                <img src="picture/notebook.png" alt="" class="trans max-w100" ondragstart="return false;">
+                                <div class="img absolute text-center fz0">
+                                    <img src="picture/1-1g0091605330-l.jpg" alt="" class="trans" ondragstart="return false;">
+                                </div>
+                            </div>
+                            <div class="info fl">
+                                <div class="clean">
+                                    <div class="logo fl text-center over fz0">
+                                        <img src="picture/1-1g0091605330-l.jpg" alt="" class="middle max-w100 inline-block">
+                                        <span class="middle-span">
+                                            </span>
+                                    </div>
+                                    <div class="title fl">
+                                        <div class="name">
+                                            Test 2 answer
+                                        </div>
+                                        <div class="date">
+                                            Update Time:2020.05.20
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brief over">
+                                    Please make sure you have already finish the test and do not copy the answer
+                                </div>
+                                <a href="testanswer2.html" ​ ​ class="view block text-center" rel="nofollow">
+                                        Check
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='item border-box over wow fadeInUp fl'>
+                        <div class="relative clean">
+                            <div class="cover fl relative">
+                                <img src="picture/notebook.png" alt="" class="trans max-w100" ondragstart="return false;">
+                                <div class="img absolute text-center fz0">
+                                    <img src="picture/1-1g009143133218.jpg" alt="" class="trans" ondragstart="return false;">
+                                </div>
+                            </div>
+                            <div class="info fl">
+                                <div class="clean">
+                                    <div class="logo fl text-center over fz0">
+                                        <img src="picture/1-1g009143133218.jpg" alt="" class="middle max-w100 inline-block">
+                                        <span class="middle-span">
+                                            </span>
+                                    </div>
+                                    <div class="title fl">
+                                        <div class="name">
+                                            Test 3 answer
+                                        </div>
+                                        <div class="date">
+                                            Update Time:2020.05.20
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brief over">
+                                    Please make sure you have already finish the test and do not copy the answer
+                                </div>
+                                <a href="testanswer3.html" ​ ​ class="view block text-center" rel="nofollow">
+                                        Check
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="turn_page" class="wow fadeInUp" first last>
+                        <span class="pageinfo">
+                            
+                            <strong>
+                                
+                            </strong>
+                            
+                            <strong>
+                                
+                            </strong>
+                            
+                        </span>
+                    </div>
+                    <div class="blank20">
+                    </div>
+                    <div class="blank20">
+                    </div>
+                    <div class="blank20">
+                    </div>
+                </div>
+            </div>
+            <div class="blank25">
+            </div>
+            <div class="blank25">
+            </div>
+            <div class="blank25">
+            </div>
+            <div class="blank25">
+            </div>
+            <div class="blank25">
+            </div>
+            <div class="blank25">
+            </div>
+            <div class="blank25">
+            </div>
+            <div class="blank25">
+            </div>
+            <footer>
+                <div class="blank15">
+                </div>
+                <div class="blank15">
+                </div>
+                <div class="wrap clean">
+                    <div class="left fl">
+                        <div class="title wow fadeInUp">
+                            Java educational website using interactive media
+                        </div>
+                        <div class="hotline wow fadeInUp">
+                            MADE BY Media2020Gp48
+                        </div>
+
+                    </div>
+                    <div class="follow fr fz0">
+                        <div class="title relative text-center wow fadeInUp">
+                            <span class="relative">
+                                contact us
+                                </span>
+                        </div>
+                        <div class="text-center">
+                            <div class="item text-center inline-block wow fadeInUp relative">
+                                <a href="#" ​ class="ico block trans qq" rel="nofollow">
+                                    <i class="fa fa-weixin middle trans">
+                                        </i>
+                                </a>
+                                QQ
+                                <div class="qrcode absolute trans">
+                                    <img src="picture/erweima1.png" alt="" width="200" />
+                                </div>
+                            </div>
+                            <div class="item text-center inline-block wow fadeInUp relative">
+                                <a href="#" ​ class="ico block trans wechat" rel="nofollow">
+                                    <i class="fa fa-weixin middle trans">
+                                        </i>
+                                </a>
+                                WeChat
+                                <div class="qrcode absolute trans">
+                                    <img src="picture/erweima.png" alt="" width="200" />
+                                </div>
+                            </div>
+                            <div class="item text-center inline-block wow fadeInUp">
+                                <a href="#" ​ class="ico block trans sina" rel="nofollow" target="_blank">
+                                    <i class="fa fa-weibo middle trans">
+                                        </i>
+                                </a>
+                                WeiBo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank20">
+                </div>
+                <div class="blank15">
+                </div>
+                <div class="bottom">
+                    <div class="wrap clean">
+                        <div class="links fl">
+
+                        </div>
+                        <div class="copyright fr">
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div id="follow">
+
+                <div id="openOnline" class="item relative hide992" row="2">
+                    <a href="#" ​ class="ico blue block absolute" title="Online consultation" onClick="OptOnline(1);OptQrcode(0);OptHot(0);" rel="nofollow">
+                        <span class="middle fa fa-qq fa-2x">
+                            </span>
+                    </a>
+
+                </div>
+                <div class="item relative show992 trans">
+                    <a href="#" ​ class="ico blue block trans phone" rel="nofollow">
+                    </a>
+                </div>
+                <div class="item relative trans">
+                    <a href="#" ​ class="ico red block trans sina" title="WeiBo" target="_blank" rel="nofollow">
+                        <span class="middle fa fa-weibo fa-2x">
+                            </span>
+                    </a>
+                </div>
+                <div id="openQrcode" class="item relative trans">
+                    <a href="#" ​ class="ico green block trans wechat" title="WeChat" onclick="OptQrcode();OptOnline(0)" rel="nofollow">
+                        <span class="middle fa fa-weixin fa-2x">
+                            </span>
+                    </a>
+                    <div id="wechat-qrcode">
+                        <img src="picture/erweima.png" alt="" width="200" />
+                    </div>
+                </div>
+                <div class="item relative">
+                    <a href="#" ​ class="ico block trans totop show totop" title="back to the top" onclick="toTop();" rel="nofollow">
+                        <span class="middle fa fa-angle-up fa-2x">
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="js/website.js">
+        </script>
+</body>
+
+</html>
